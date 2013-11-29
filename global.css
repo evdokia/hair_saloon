@@ -1,0 +1,36 @@
+/*Links Settings*/
+a{color:white; text-decoration:none}
+a:hover {text-decoration:none; color:#ff00dc }
+a visited{color:white;}
+
+/*Body Settings*/
+body{margin:0px; background-position: 0px 0px; background-image: url('../img/background.jpg');background-repeat: no-repeat; background-attachment: scroll; text-decoration:none;}
+
+/*Menu Settings*/
+#wrapper_head{background-image: url('../img/line_purple_horizontal.png');background-repeat: no-repeat;background-position: 1046px 123px;background-attachment: scroll;}
+#menu{font-size:13px; line-height:15px; font-family:'Segoe UI'; width:320px; padding-top:98px;color:white;  text-decoration:none;  }
+#logo{padding-top:30px; width:670px;}
+
+.menu_spacer{width:10px;}
+.content_centered{width: 1000px; margin-left: auto; margin-right: auto;}
+
+/*Contents Settings*/
+#welcome_text{padding:20px 10px 20px 10px; width:930px;}
+#slider{padding:20px 10px 20px 10px; width:930px;}
+
+/*font-family: 'Poiret One', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Jura', sans-serif;*/
+
+.text_Intro {font-family: 'Roboto'; color:white; font-size:30px;font-weight:300; text-shadow:5px 5px 5px black;}
+.text_Main {font-family: 'Roboto'; color:white; font-size:17px; font-weight:300; text-shadow:5px 5px 5px black;}
+.text_Banner {font-family: 'Roboto'; color:white; font-size:65px; line-height:65px; font-weight:100; text-shadow:5px 5px 5px black; }
+
+
+h1{ color: white; font-family: 'Poiret One'; color:white; font-size:30px; line-height:28px; font-weight:300; font-family: 'Roboto Condensed'; text-shadow:5px 5px 5px black;  }
+h2{ color: white; font-family: 'Andika', sans-serif; font-style:italic; font-weight:normal; font-size:16px; text-shadow:2px 2px 3px black;  }
+h3{ color: white; font-family: 'Roboto Condensed', sans-serif; font-weight:normal; font-size:12px; text-shadow:2px 2px 3px black;  }
+
+#footer{background: #000; background: rgba(0,0,0,.6); padding:5px 10px 5px 20px; margin:50px 0px 0px 0px;}
+
