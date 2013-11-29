@@ -17,28 +17,26 @@
 #featured>div,
 #featured>a { display: none; }
 
-#featured_Articles_home { 
+#featured_Products_home { 
 	width: 1005px;
-	height: 500px;
+	height: 350px;
 	background: #fff no-repeat center center;
 	overflow: hidden; }
-#featured_Articles_home>img,  
-#featured_Articles_home>div,
-#featured_Articles_home>a { display: none; }
-
-
+#featured_Products_home>img,  
+#featured_Products_home>div,
+#featured_Products_home>a { display: none; }
 
 /* CONTAINER
    ================================================== */
 
 div.orbit-wrapper {
-    width: 930px;
-    height: 439px;
+    width: 1px;
+    height: 1px;
     position: relative; }
 
 div.orbit {
-    width: 930px;
-    height: 439px;
+    width: 1px;
+    height: 1px;
     position: relative;
     overflow: hidden }
 
@@ -65,18 +63,46 @@ div.orbit>a {
 
 /* Note: If your slider only uses content or anchors, you're going to want to put the width and height declarations on the ".orbit>div" and "div.orbit>a" tags in addition to just the .orbit-wrapper */
 
+/* Headers 
+   ================================================== */
+
+div.orbit_header
+{
+    width: 1000px;
+    height: 50px;
+    overflow: hidden;
+    position: absolute;
+    top: -49px;
+    left: 0px;
+    z-index: 1001; 
+    
+}
+
+div.orbit_footer{
+    width: 1000px;
+    height: 5px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index: 1001; 
+    
+}
+
+
+
 
 /* TIMER
    ================================================== */
 
 div.timer {
-    width: 40px;
-    height: 40px;
+    width: 0px;
+    height: 0px;
     overflow: hidden;
     position: absolute;
     top: 10px;
     right: 10px;
-    opacity: .6;
+    opacity: 0;
     cursor: pointer;
     z-index: 1001; }
 
@@ -109,7 +135,7 @@ span.mask.move {
     background: url(../img/orbit/timer-black.png) repeat 0 0; }
 
 span.pause {
-    display: block;
+    display: none;
     width: 40px;
     height: 40px;
     position: absolute;
@@ -135,7 +161,8 @@ span.pause.active {
     font-family: "HelveticaNeue", "Helvetica-Neue", Helvetica, Arial, sans-serif; }
 
 .orbit-wrapper .orbit-caption {
-   
+    background: #000;
+    background: rgba(0,0,0,.6);
     z-index: 1000;
     color: #fff;
 	text-align: center;
@@ -178,7 +205,7 @@ div.slider-nav span.left {
     position: absolute;
     z-index: 1000;
     list-style: none;
-    bottom: -40px;
+    bottom: -35px;
     left: 50%;
 	margin-left: -50px;
     padding: 0; }
@@ -189,7 +216,7 @@ div.slider-nav span.left {
     cursor: pointer;
     color: #999;
     text-indent: -9999px;
-    background: url(../img/orbit/bullets.jpg) no-repeat 4px 0;
+    background: url('../../../../../data/img/orbit/bullets.png') no-repeat 4px 0;
     width: 13px;
     height: 12px;
     overflow: hidden; }
