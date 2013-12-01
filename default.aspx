@@ -36,7 +36,7 @@
     <div class="content_centered">
         <div id="welcome_text">
             <br /><br />
-            <span class="text_Intro" >Здравейте!</span>
+            <span class="text_Intro" ><asp:Label ID="UserGreetTxt" runat="server" Text="Здравейте!" /><asp:Label ID="UserNameTxt" runat="server" Visible="false" Text="UserName" /></span>
             <br /><br />
             <span class="text_Main">
             Фризьорско студио “Мадам” Ви предлага модерен интериорен дизайн, уютна обстановка и любезно отношение на персонала. Престоят в нашия салон може да Ви донесе само красота и наслада, релакс и добро настроение.
@@ -48,39 +48,24 @@
         <div id="slider">
             <img alt="Top border " src="img/banner_border_top.png" />
             <div id="featured" style="position:relative; top:0px; left:0px; ">
-                <asp:LinkButton ID="btn1" runat="server">
-                        <div style="position:relative; top:0px; left:0px;">
-                            <img src="img/hp_1.jpg" alt="Боядисване на Къса, Средна и Дълга Коса"  />
-                        </div>
-                        <div class="text_Banner" style="position:absolute;top:150px;left:140px; width:500px; ">
-                            Дамско подстригване
-                        </div>
-                </asp:LinkButton>
-                <asp:LinkButton ID="LinkButton1" runat="server">
-                        <div style="position:relative; top:0px; left:0px;">
-                            <img src="img/hp_2.jpg" alt="Боядисване на Къса, Средна и Дълга Коса"  />
-                        </div>
-                        <div class="text_Banner" style="position:absolute;top:150px;left:140px; width:500px; ">
-                            Боядисване
-                        </div>
-                </asp:LinkButton>
-                 <asp:LinkButton ID="LinkButton2" runat="server">
-                        <div style="position:relative; top:0px; left:0px;">
-                            <img src="img/hp_3.jpg" alt="Боядисване на Къса, Средна и Дълга Коса"  />
-                        </div>
-                        <div class="text_Banner" style="position:absolute;top:150px;left:140px; width:500px; ">
-                            Навиване с маша
-                        </div>
-                </asp:LinkButton>
-                 <asp:LinkButton ID="LinkButton3" runat="server">
-                        <div style="position:relative; top:0px; left:0px;">
-                            <img src="img/hp_4.jpg" alt="Боядисване на Къса, Средна и Дълга Коса"  />
-                        </div>
-                        <div class="text_Banner" style="position:absolute;top:150px;left:140px; width:500px; ">
-                            Посетете ни още Днес!!!
-                        </div>
-                </asp:LinkButton>
-                
+                <asp:ListView ID="lvServices" runat="server" >
+                    <LayoutTemplate>
+                        <div runat="server" id="itemPlaceholder" />
+                    </LayoutTemplate>
+                    <ItemTemplate>
+                        <div style="width:930px; height:439px;"> 
+                            <div style="position:absolute; top:0px; left:0px;">
+                                <asp:image runat="server" ImageUrl='<%# Eval("Image")%>' AlternateText='<%# Eval("Body")%>'  />
+                            </div>
+                            <div class="text_Banner" style="position:relative; padding-top:150px;left:140px; width:500px; ">
+                                <%# Eval("Headline")%>
+                            </div>
+                            <div class="text_Intro" style="position:relative;top:20px;left:140px; width:500px; ">
+                                <%# Eval("Body") & " само за "%><b><%# Eval("Price") & "лв"%></b>
+                            </div>
+                       </div>
+                    </ItemTemplate>
+                </asp:ListView>
             </div>
             <img alt="Bottom border "  src="img/banner_border_bottom.png" style="padding-top: 6px;" />
             <!-- Captions for Orbit -->
