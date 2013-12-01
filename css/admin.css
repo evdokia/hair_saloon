@@ -1,0 +1,12 @@
+/*Links Settings*/
+a{text-decoration:none}
+a:hover {text-decoration:none; color:#ff00dc }
+a visited{color:white;}
+
+/*Body Settings*/
+body{margin:0px;}
+
+/*Menu Settings*/
+.menu_spacer{width:10px;}
+.content_centered{width: 1000px; margin-left: auto; margin-right: auto;}
+
