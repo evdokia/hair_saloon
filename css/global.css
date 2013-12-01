@@ -25,6 +25,7 @@ font-family: 'Jura', sans-serif;*/
 
 .text_Intro {font-family: 'Roboto'; color:white; font-size:30px;font-weight:300; text-shadow:5px 5px 5px black;}
 .text_Main {font-family: 'Roboto'; color:white; font-size:17px; font-weight:300; text-shadow:5px 5px 5px black;}
+.text_Small {font-family: 'Roboto'; color:white; font-size:12px; font-weight:300;}
 .text_Banner {font-family: 'Roboto'; color:white; font-size:65px; line-height:65px; font-weight:100; text-shadow:5px 5px 5px black; }
 
 
